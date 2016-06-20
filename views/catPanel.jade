@@ -1,4 +1,5 @@
 div.panel
-	each val in ['ham', 'turkey', 'roastBeef']
-		div.ingred(id=val)
-			p val
+	each val, index in menu
+		div.ingred(id=index+'--panel')
+			p= index
+			p= val

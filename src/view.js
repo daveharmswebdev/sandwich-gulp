@@ -11,8 +11,8 @@ view.renderIngredientNav = function(menu) {
 	$('.interface').append(catNav({category}));
 };
 
-view.renderCategory = function(cat) {
-	$('.menu').after(catPanel({cat: cat}));
+view.renderCategory = function(cat, menu) {
+	$('.menu').after(catPanel({cat: cat, menu: menu[cat]}));
 };
 
 module.exports = view;
