@@ -17,10 +17,12 @@ view.renderCategory = function(cat, menu) {
 };
 
 view.renderOrder = function(order) {
-	let subTotal = order.map((item) => item.price).reduce((a,b) => (a+b));
+	let subTotal = order.map((item) => item.price).reduce((a,b) => (a+b)).toFixed(2);
 	console.log(subTotal)
-	let tax = 1;
-	let grand = subTotal + tax;
+	let tax = subTotal * 0.925;
+	tax = tax.toFixed(2);
+	let grand = parseFloat(subTotal) + parseFloat(tax);
+	grand = grand.toFixed(2);
 	$('.order--view').remove();
 	$('.order').append(orderView({order, subTotal, tax, grand}));
 };
