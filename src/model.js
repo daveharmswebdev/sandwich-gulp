@@ -6,6 +6,7 @@ var menu;
 function setMenu(data) {
 	menu = data.menu;
 	view.renderIngredientNav(menu);
+	view.renderCategory('meat');
 }
 
 model.loadJson = function () {
