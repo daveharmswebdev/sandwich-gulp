@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify src/index.js > dist/bundle.js",
+    "watch": "watchify src/index.js -o dist/bundle.js -v"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browserify": "^13.0.1",
+    "jade": "^1.11.0",
+    "jadeify": "^4.6.0",
+    "jquery": "^3.0.0",
     "watchify": "^3.7.0"
   },
   "devDependencies": {
