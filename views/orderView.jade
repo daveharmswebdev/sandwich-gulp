@@ -1,0 +1,7 @@
+d.order--view
+	each val in order
+		p.item--name=val.name
+			span.item--price=val.price
+	p.order--total--sub= subTotal
+	p.order--total--tax= tax
+	p.order--total--grand= grand
