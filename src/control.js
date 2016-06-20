@@ -13,7 +13,9 @@ var view = require('../src/view.js');
 
  control.panelListen = function() {
 	$('.interface').on('click', '.ingred', function(event) {
-		console.log(event.currentTarget);
+		let name = $(event.currentTarget).children('.ingred--name').text();
+		let price = $(event.currentTarget).children('.ingred--price').text();
+		model.addToOrder(name, price);
 	});
 };
 
