@@ -1,126 +1,42 @@
 {
 	"menu": {
 		"meat": {
-			"ham": {
-				"id": "1",
-				"price": "3.00"
-			},
-			"turkey": {
-				"id": "2",
-				"price": "3.00"
-			},
-			"roastBeef": {
-				"id": "3",
-				"price": "3.00"
-			},
-			"pastrami": {
-				"id": "4",
-				"price": "3.50"
-			},
-			"salami": {
-				"id": "5",
-				"price": "3.50"
-			}
+			"ham": "3.00",
+			"turkey": "3.00",
+			"roastBeef": "3.00",
+			"pastrami": "3.25",
+			"salami": "3.50"
 		},
 		"cheese": {
-			"swiss": {
-				"id": "1",
-				"price": "1.50"
-			},
-			"provolone": {
-				"id": "2",
-				"price": "1.50"
-			},
-			"cheddar": {
-				"id": "3",
-				"price": "1.50"
-			},
-			"muenster": {
-				"id": "4",
-				"price": "1.50"
-			},
-			"pepperColbyJack": {
-				"id": "5",
-				"price": "1.50"
-			}
+			"swiss": "1.50",
+			"provolone": "1.50",
+			"cheddar": "1.50",
+			"muenster": "1.50",
+			"pepperColbyJack": "1.50"
 		},
 		"bread": {
-			"white": {
-				"id": "1",
-				"price": "1.00"
-			},
-			"wheat": {
-				"id": "2",
-				"price": "1.00"
-			},
-			"rye": {
-				"id": "3",
-				"price": "1.00"
-			},
-			"baguette": {
-				"id": "4",
-				"price": "1.25"
-			},
-			"focaccia": {
-				"id": "5",
-				"price": "1.50"
-			}
+			"white": "1.00",
+			"wheat": "1.00",
+			"rye": "1.00",
+			"baguette": "1.25",
+			"focaccia": "1.50"
 		},
 		"toppings": {
-			"lettuce": {
-				"id": "1",
-				"price": "0.20"
-			},
-			"tomato": {
-				"id": "2",
-				"price": "0.20"
-			},
-			"onion": {
-				"id": "3",
-				"price": "0.20"
-			},
-			"oliveTapenade": {
-				"id": "4",
-				"price": "0.50"
-			},
-			"jalepeno": {
-				"id": "5",
-				"price": "0.20"
-			}
+			"lettuce": "0.20",
+			"tomato": "0.20",
+			"onion": "0.20",
+			"oliveTapenade": "0.50",
+			"jalepeno": "0.20"
 		},
 		"condiments": {
-			"mustard": {
-				"id": "1",
-				"price": "0.00"
-			},
-			"mayo": {
-				"id": "2",
-				"price": "0.00"
-			},
-			"sriracha": {
-				"id": "3",
-				"price": "0.00"
-			},
-			"oil": {
-				"id": "4",
-				"price": "0.00"
-			},
-			"vinegar": {
-				"id": "5",
-				"price": "0.00"
-			},
-			"salt": {
-				"id": "6",
-				"price": "0.00"
-			},
-			"pepper": {
-				"id": "7",
-				"price": "0.00"
-			},
-			"honeyMustard": {
-				"id": "8",
-				"price": "0.00"
-			}
+			"mustard": "0.00",
+			"mayo": "0.00",
+			"sriracha": "0.00",
+			"oil": "0.00",
+			"vinegar": "0.00",
+			"salt": "0.00",
+			"pepper": "0.00",
+			"honeyMustard": "0.00"
 		}
 	}
 }
