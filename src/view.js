@@ -19,7 +19,7 @@ view.renderCategory = function(cat, menu) {
 view.renderOrder = function(order) {
 	let subTotal = order.map((item) => item.price).reduce((a,b) => (a+b)).toFixed(2);
 	console.log(subTotal)
-	let tax = subTotal * 0.925;
+	let tax = subTotal * 0.0925;
 	tax = tax.toFixed(2);
 	let grand = parseFloat(subTotal) + parseFloat(tax);
 	grand = grand.toFixed(2);
