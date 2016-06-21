@@ -1,0 +1,30 @@
+div {
+	border: 1px solid black;
+}
+
+.order--view {
+	padding: 1rem;
+}
+
+.ingred {
+	padding: 1rem;
+	margin: 0.5rem;
+}
+
+.order, .interface {
+	height: 95vh;
+}
+
+.menu {
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+
+.menu--nav--cats {
+	display: inline-block;
+	margin: 10px;
+}
+
+span {
+	float: right;
+}

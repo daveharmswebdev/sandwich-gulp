@@ -1,7 +1,13 @@
-d.order--view
+div.order--view
+	h2 order
 	each val in order
 		p.item--name=val.name
 			span.item--price=val.price
-	p.order--total--sub= subTotal
-	p.order--total--tax= tax
-	p.order--total--grand= grand
+	hr
+	h2 Total
+	p.order--total--sub= 'Subtotal '
+		span= subTotal
+	p.order--total--tax= 'Tax: '
+		span= tax
+	p.order--total--grand= 'Grand Total: '
+		span= grand

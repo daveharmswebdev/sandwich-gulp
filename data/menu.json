@@ -1,42 +1,42 @@
 {
 	"menu": {
-		"meat": {
-			"ham": "3.00",
-			"turkey": "3.00",
-			"roastBeef": "3.00",
-			"pastrami": "3.25",
-			"salami": "3.50"
+		"Meat": {
+			"Ham": "3.00",
+			"Turkey": "3.00",
+			"Roast Beef": "3.00",
+			"Pastrami": "3.25",
+			"Salami": "3.50"
 		},
-		"cheese": {
-			"swiss": "1.50",
-			"provolone": "1.50",
-			"cheddar": "1.50",
-			"muenster": "1.50",
-			"pepperColbyJack": "1.50"
+		"Cheese": {
+			"Swiss": "1.50",
+			"Provolone": "1.50",
+			"Cheddar": "1.50",
+			"Muenster": "1.50",
+			"Pepper Colby Jack": "1.50"
 		},
-		"bread": {
-			"white": "1.00",
-			"wheat": "1.00",
-			"rye": "1.00",
-			"baguette": "1.25",
-			"focaccia": "1.50"
+		"Bread": {
+			"White": "1.00",
+			"Wheat": "1.00",
+			"Rye": "1.00",
+			"Baguette": "1.25",
+			"Focaccia": "1.50"
 		},
-		"toppings": {
-			"lettuce": "0.20",
-			"tomato": "0.20",
-			"onion": "0.20",
-			"oliveTapenade": "0.50",
-			"jalepeno": "0.20"
+		"Toppings": {
+			"Lettuce": "0.20",
+			"Tomato": "0.20",
+			"Onion": "0.20",
+			"Olive Tapenade": "0.50",
+			"Jalepeno": "0.20"
 		},
-		"condiments": {
-			"mustard": "0.00",
-			"mayo": "0.00",
-			"sriracha": "0.00",
-			"oil": "0.00",
-			"vinegar": "0.00",
-			"salt": "0.00",
-			"pepper": "0.00",
-			"honeyMustard": "0.00"
+		"Condiments": {
+			"Mustard": "0.00",
+			"Mayo": "0.00",
+			"Sriracha": "0.00",
+			"Oil": "0.00",
+			"Vinegar": "0.00",
+			"Salt": "0.00",
+			"Pepper": "0.00",
+			"Honey Mustard": "0.00"
 		}
 	}
 }
