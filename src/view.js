@@ -1,3 +1,5 @@
+"use strict";
+
 var view = {};
 var $ = require('jQuery');
 var catNav = require('../views/catNav.jade');
@@ -18,7 +20,7 @@ view.renderCategory = function(cat, menu) {
 
 view.renderOrder = function(order) {
 	let subTotal = order.map((item) => item.price).reduce((a,b) => (a+b)).toFixed(2);
-	console.log(subTotal)
+	console.log(subTotal);
 	let tax = subTotal * 0.0925;
 	tax = tax.toFixed(2);
 	let grand = parseFloat(subTotal) + parseFloat(tax);

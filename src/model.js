@@ -1,3 +1,5 @@
+"use strict";
+
 var model = {};
 module.exports = model;
 var $ = require('jQuery');
