@@ -14,7 +14,6 @@ function setMenu(data) {
 	view.renderCategory('Meat', menu);
 	control.catNavListen();
 	control.panelListen();
-
 }
 
 model.addToOrder = function(name, price) {
