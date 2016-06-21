@@ -6,6 +6,15 @@ var catNav = require('../views/catNav.jade');
 var catPanel = require('../views/catPanel.jade');
 var orderView = require('../views/orderView.jade');
 
+function toCurrency(order) {
+	var obj = {};
+	obj.test = "test";
+	obj.name = order.name;
+	obj.price = order.price.toFixed(2).toString();
+	console.log(obj.price);
+	return obj;
+}
+
 view.renderIngredientNav = function(menu) {
 	var category = [];
 	for (var key in menu) {
@@ -20,7 +29,8 @@ view.renderCategory = function(cat, menu) {
 
 view.renderOrder = function(order) {
 	let subTotal = order.map((item) => item.price).reduce((a,b) => (a+b)).toFixed(2);
-	console.log(subTotal);
+	order = order.map(toCurrency);
+	console.log(order);
 	let tax = subTotal * 0.0925;
 	tax = tax.toFixed(2);
 	let grand = parseFloat(subTotal) + parseFloat(tax);

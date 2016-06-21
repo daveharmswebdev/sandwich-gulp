@@ -1,13 +1,13 @@
 div.order--view
-	h2 order
+	h2 Order
 	each val in order
 		p.item--name=val.name
 			span.item--price=val.price
 	hr
 	h2 Total
 	p.order--total--sub= 'Subtotal '
-		span= subTotal
+		span= '$ '+subTotal
 	p.order--total--tax= 'Tax: '
-		span= tax
+		span= '$ '+tax
 	p.order--total--grand= 'Grand Total: '
-		span= grand
+		span= '$ '+grand
