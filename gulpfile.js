@@ -10,6 +10,8 @@ let buffer = require('vinyl-buffer');
 let gutil = require('gulp-util');
 let sourcemaps = require('gulp-sourcemaps');
 let jadeify = require('jadeify');
+let jasmine = require('gulp-jasmine');
+let jasmineReporter = require('jasmine-reporters');
 
 let handleError = function(task) {
   return function(err) {
@@ -55,8 +57,6 @@ function bundle() {
 }
 gulp.task('browserify', bundle);
 
-
-
 /*
   JSHINT SECTION
 
@@ -70,6 +70,18 @@ gulp.task('lint', function() {
 });
 
 /*
+  JASMINE SECTION
+
+  */
+
+gulp.task('specs', function() {
+  return gulp.src('./src/specs/*.js')
+    .pipe(jasmine(jasmine({
+      reporter: new jasmineReporter.JUnitXmlReporter()
+    })));
+});
+
+/*
   WATCH TASK SECTION
 
   Detects when you make a change to any JavaScript file, and/or
@@ -77,10 +89,10 @@ gulp.task('lint', function() {
  */
 gulp.task('watch', function() {
   // Run the link task when any JavaScript file changes
-  gulp.watch(['./src/scripts/**/*.js'], ['lint']);
+  gulp.watch(['./src/**/*.js'], ['lint', 'specs']);
 
   gutil.log(gutil.colors.bgGreen('Watching for changes...'));
 });
 
 // This task runs when you type `gulp` in the CLI
-gulp.task('default', ['lint', 'watch'], bundle);
+gulp.task('default', ['lint', 'watch', 'specs'], bundle);
