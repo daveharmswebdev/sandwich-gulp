@@ -1,3 +1,5 @@
+"use strict";
+
 var control = {};
 var $ = require('jQuery');
 var model = require('../src/model.js');
@@ -18,5 +20,9 @@ var view = require('../src/view.js');
 		model.addToOrder(name, price);
 	});
 };
+
+control.test = function() {
+	console.log('test');
+}
 
 module.exports = control;
