@@ -11,7 +11,7 @@ var order = [];
 function setMenu(data) {
 	menu = data.menu;
 	view.renderIngredientNav(menu);
-	view.renderCategory('meat', menu);
+	view.renderCategory('Meat', menu);
 	control.catNavListen();
 	control.panelListen();
 

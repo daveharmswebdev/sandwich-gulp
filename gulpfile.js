@@ -63,7 +63,7 @@ gulp.task('browserify', bundle);
   Not optional. You should always be validating your JavaScript
  */
 gulp.task('lint', function() {
-  return gulp.src(['./src/scripts/**/*.js'])
+  return gulp.src(['./src/**/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .on('error', function() { });
